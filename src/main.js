@@ -7,9 +7,15 @@ fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`).then(response =>
   let media;
     if (data.media_type === "image") {
         media = `<img src="${data.url}" width="500" height="400" />`;
-    } else {
-        media = `<video src="${data.url}" controls></video>`;
+    } 
+    else if (data.url.includes("youtube")) {
+      media = `<div id="videoContainer"><iframe id="${data.url}" width="560" height="315" frameborder="0" allowfullscreen></iframe></div>`
     }
+    else {
+        media = `<video src="https://www.youtube.com/watch?v=qqbsvcq3z4k&t=1009s" controls></video>`;
+    }
+
+    media = `<div id="videoContainer"><iframe id="${data.url}" width="560" height="315" frameborder="0" allowfullscreen></iframe></div>`
 
   document.querySelector("#app").innerHTML = ` 
   <h1> ${data.title} </h1>
@@ -17,9 +23,11 @@ fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`).then(response =>
   <p> ${data.explanation} </p>  
   `;
 }) //fetches data, handles response, uses the data
+.catch(err => {
+  document.querySelector("#app").innerHTML = `<p>Error: ${err.message}</p>`;
+}); //shows error
+
 
 //date selector
 const date = document.querySelector("#datepicker").value;
 fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=${date}`)
-
-
