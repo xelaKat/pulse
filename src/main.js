@@ -9,13 +9,11 @@ fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`).then(response =>
         media = `<img src="${data.url}" width="500" height="400" />`;
     } 
     else if (data.url.includes("youtube")) {
-      media = `<div id="videoContainer"><iframe id="${data.url}" width="560" height="315" frameborder="0" allowfullscreen></iframe></div>`
+      media = `<p> sorry, this is supposed to be a youtube video, but i don't know how to embed those :( </p>`
     }
     else {
         media = `<video src="https://www.youtube.com/watch?v=qqbsvcq3z4k&t=1009s" controls></video>`;
     }
-
-    media = `<div id="videoContainer"><iframe id="${data.url}" width="560" height="315" frameborder="0" allowfullscreen></iframe></div>`
 
   document.querySelector("#app").innerHTML = ` 
   <h1> ${data.title} </h1>
