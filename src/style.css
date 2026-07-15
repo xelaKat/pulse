@@ -35,5 +35,10 @@ body::after{
   height: 100%;
   background-color: rgb(54, 54, 97);
   z-index: -1;
+}
+body::before{
+  clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+}
+body::after{
   clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
 }
