@@ -3,12 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>astronomy</title> <!--put your project title here. in my case, im calling it astronomy.-->
+    <title>NASA APOD New Tab</title>
     <link rel="stylesheet" href="src/style.css">
   </head>
   <body>
-    <input type="date" id="datepicker"/>
+    <input type="date" id="datepicker"/> <!-- Choose your date -->
+
+    <!-- Search bar -->
+    <div class="container">
+      <form>
+        <input type="text" placeholder="**server whispers to you: search up your name">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+
+    <!-- Container for NASA data -->
     <div id="app" class="main"></div>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
