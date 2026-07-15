@@ -12,7 +12,9 @@ p{
 }
 .explanation{
   display: block;
-  width: 500;
+  width: 600;
+  padding: 0.5em;
+  place-items: center;
 }
 .main{
   border: 4px;
