@@ -33,5 +33,5 @@ body::after{
   position: fixed;
   background-color: rgb(100, 62, 100);
   z-index: -1;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+  clip-path: polygon(8% 0, 0% 100%, 100% 35%);
 }
