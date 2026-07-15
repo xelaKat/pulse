@@ -8,7 +8,8 @@ body{
 .container{
   width: 500px;
   height: 50px;
-  padding: 10;
+  padding: 10px;
+  margin: auto;
   background: transparent;
   display: flex;
   align-items: center;
@@ -16,7 +17,8 @@ body{
 }
 .search-bar{
   background: rgb(184, 186, 213);
-  width: 500px;
+  width: 490px;
+  height: 30px;
   display: flex;
   align-items: center;
   border-radius: 10%;
