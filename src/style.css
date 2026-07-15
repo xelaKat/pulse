@@ -18,13 +18,12 @@ body{
 .search-bar{
   background: rgb(184, 186, 213);
   width: 490px;
-  height: 30px;
   display: flex;
   align-items: center;
   border-radius: 10%;
-  padding: 5px 15px;
-  outline: 2px;
-  outline-color: white;
+  padding: 5px 20px;
+  outline: none;
+  border: 2px solid white;
 }
 .search-bar input{
   background: transparent;
@@ -33,9 +32,10 @@ body{
   outline: none;
   padding: 15px 10px;
   font-size: 15px;
+  color: rgb(88, 88, 205);
 }
 ::placeholder{
-  color: #cac7ff;
+  color: rgb(88, 88, 205);
 }
 .search-bar button{
   background: rgb(123, 123, 206);
@@ -43,9 +43,9 @@ body{
   border: 0;
   border-radius: 30%;
   width: 70px;
-  height: 40px;
+  height: 30px;
   outline: none;
-  color: #cac7ff;
+  color: rgb(172, 172, 210);
   letter-spacing: 1px;
   cursor: pointer;
 }
