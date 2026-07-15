@@ -26,7 +26,8 @@ p{
   margin: 0.5em;
 }
 
-body::before{
+body::before,
+body::after{
   content: '';
   position: fixed;
   top: 0;
