@@ -8,8 +8,8 @@ body{
 .container{
   width: 500px;
   height: 50px;
-  padding: 5%;
-  background: rgb(255, 255, 255);
+  padding: 10;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,8 +19,10 @@ body{
   width: 500px;
   display: flex;
   align-items: center;
-  border-radius: 30%;
-  padding: 7px 17px;
+  border-radius: 10%;
+  padding: 5px 15px;
+  outline: 2px;
+  outline-color: white;
 }
 .search-bar input{
   background: transparent;
@@ -37,9 +39,9 @@ body{
   background: rgb(123, 123, 206);
   padding: 10px;
   border: 0;
-  border-radius: 40%;
-  width: 60px;
-  height: 30px;
+  border-radius: 30%;
+  width: 70px;
+  height: 40px;
   outline: none;
   color: #cac7ff;
   letter-spacing: 1px;
@@ -71,6 +73,7 @@ body::after{
   content: '';
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgb(54, 54, 97);
