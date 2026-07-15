@@ -31,9 +31,9 @@ body::after{
   content: '';
   position: fixed;
   top: 0;
-  width: 50%;
+  width: 100%;
   height: 100%;
   background-color: rgb(54, 54, 97);
   z-index: -1;
-  clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+  clip-path: polygon(12.5% 0, 87.5% 0, 100% 100%, 0% 100%);
 }
